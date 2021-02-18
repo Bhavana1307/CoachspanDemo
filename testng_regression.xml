@@ -10,7 +10,7 @@ parallel ="tests" thread-count="2">
 	
 	</listeners>
 	
-	<test name="Regression Functional Regression Test" verbose="2">
+	<test name="Login Test" verbose="2">
 		<classes>
 			<class name="com.coachspan.qa.Coachspan1.LoginPageTest" />
 		</classes>
@@ -26,10 +26,16 @@ parallel ="tests" thread-count="2">
 			<class name ="com.coachspan.qa.Coachspan1.CoachesPageTest"/>
 		</classes>
 		</test>
-			
-		<test name="CSBD test">
+	
+		<test name="CSBD Page test">
 		<classes>
 			<class name ="com.coachspan.qa.Coachspan1.CSBDTest"/>
+		</classes>
+		</test>
+		
+		<test name="Availability Page test">
+		<classes>
+			<class name ="com.coachspan.qa.Coachspan1.AvailabilityPageTest"/>
 		</classes>
 		</test>
 	

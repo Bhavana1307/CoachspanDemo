@@ -33,7 +33,7 @@ public class AvailabilityPage extends BasePage {
 	private By verificodetext= By.xpath("//input[@id='verificationCode']");
 	private By verifybutton = By.xpath("//button[contains(@onclick,'verify')]");
 	private By selectdropdown = By.xpath("(//span[contains(@class,'k-dropdown-wrap')])[1]");
-	String accountID;
+	public String accountID;
 	
 	public AvailabilityPage(WebDriver driver) 
 	{
@@ -102,16 +102,14 @@ public class AvailabilityPage extends BasePage {
 			driver.findElement(verifybutton).click();	 
 	}
 	
-	public String getVerificationCode() {
+	public String getVerificationCode() 
+	{
 		
-       RestAssured.baseURI = "http://personserver.coachspan.internal:9002/sec/code/account/";
-       
-       RequestSpecification httprequest = RestAssured.given();
-      
+       RestAssured.baseURI = "http://personserver.coachspan.internal:9002/sec/code/account/";     
+       RequestSpecification httprequest = RestAssured.given();    
        Response response = httprequest.request(Method.GET, "/"+accountID);
-		String Verificationcode = response.getBody().asString();
-
-		System.out.println("responsebody: "+Verificationcode );
+	   String Verificationcode = response.getBody().asString();
+	   System.out.println("responsebody: "+Verificationcode );
        
 		return Verificationcode;
 	}

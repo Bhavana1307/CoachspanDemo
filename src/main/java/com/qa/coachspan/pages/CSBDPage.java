@@ -162,6 +162,7 @@ public class CSBDPage extends BasePage {
 	{	
 		String URL=getCEEUrl();
 		menuoption("logout");
+		elementActions.shortwaitforElement();
 		driver.get(URL);
 		return new CEEPage(driver);	
 	}

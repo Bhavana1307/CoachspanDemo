@@ -4,30 +4,17 @@
   <listeners>
     <listener class-name="com.qa.coachspan.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="2" name="Coachespage test(failed)" parallel="tests">
+  <test thread-count="2" name="Availability Page test(failed)" parallel="tests">
     <classes>
-      <class name="com.coachspan.qa.Coachspan1.CoachesPageTest">
+      <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
         <methods>
-          <include name="coachespage"/>
-          <include name="noofcoaches"/>
-          <include name="pageheadingTest"/>
-          <include name="HomePage_setUp"/>
+          <include name="fieldvisibility"/>
           <include name="teardown"/>
+          <include name="redirectThankYouPage"/>
+          <include name="HomePage_setUp"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.coachspan.qa.Coachspan1.CoachesPageTest -->
+      </class> <!-- com.coachspan.qa.Coachspan1.AvailabilityPageTest -->
     </classes>
-  </test> <!-- Coachespage test(failed) -->
-  <test thread-count="2" name="CSBD test(failed)" parallel="tests">
-    <classes>
-      <class name="com.coachspan.qa.Coachspan1.CSBDTest">
-        <methods>
-          <include name="verifyaddedmember"/>
-          <include name="HomePage_setUp"/>
-          <include name="teardown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.coachspan.qa.Coachspan1.CSBDTest -->
-    </classes>
-  </test> <!-- CSBD test(failed) -->
+  </test> <!-- Availability Page test(failed) -->
 </suite> <!-- Failed suite [Coachspan Regression Test Suite] -->
