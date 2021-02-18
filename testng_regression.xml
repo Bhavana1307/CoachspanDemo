@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Coachspan Regression Test Suite" 
+parallel ="tests" thread-count="2">
+	
+	
+	<listeners>
+	<listener class-name="com.qa.coachspan.listeners.ExtentReportListener" />
+	
+	</listeners>
+	
+	<test name="Regression Functional Regression Test" verbose="2">
+		<classes>
+			<class name="com.coachspan.qa.Coachspan1.LoginPageTest" />
+		</classes>
+		</test>
+		<test name="homepage test">
+		<classes>
+			<class name="com.coachspan.qa.Coachspan1.HomePageTest" />
+		</classes>
+		</test>
+		
+		<test name="Coachespage test">
+		<classes>
+			<class name ="com.coachspan.qa.Coachspan1.CoachesPageTest"/>
+		</classes>
+		</test>
+			
+		<test name="CSBD test">
+		<classes>
+			<class name ="com.coachspan.qa.Coachspan1.CSBDTest"/>
+		</classes>
+		</test>
+	
+</suite> 

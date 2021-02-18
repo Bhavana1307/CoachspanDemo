@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="151690" started-at="2021-02-18T15:02:26 IST" finished-at="2021-02-18T15:04:58 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="151690" started-at="2021-02-18T15:02:26 IST" finished-at="2021-02-18T15:04:58 IST">
+      <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@63355449]" name="setUp" is-config="true" duration-ms="12291" started-at="2021-02-18T15:02:26 IST" finished-at="2021-02-18T15:02:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@63355449]" name="HomePage_setUp" is-config="true" duration-ms="99789" started-at="2021-02-18T15:02:38 IST" finished-at="2021-02-18T15:04:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage_setUp -->
+        <test-method status="PASS" signature="fieldvisibility()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@63355449]" name="fieldvisibility" duration-ms="4614" started-at="2021-02-18T15:04:18 IST" finished-at="2021-02-18T15:04:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fieldvisibility -->
+        <test-method status="PASS" signature="redirectThankYouPage()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@63355449]" name="redirectThankYouPage" duration-ms="34810" started-at="2021-02-18T15:04:23 IST" finished-at="2021-02-18T15:04:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectThankYouPage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@63355449]" name="teardown" is-config="true" duration-ms="1" started-at="2021-02-18T15:04:58 IST" finished-at="2021-02-18T15:04:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.coachspan.qa.Coachspan1.AvailabilityPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
