@@ -8,7 +8,6 @@
     <classes>
       <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
         <methods>
-          <include name="fieldvisibility"/>
           <include name="teardown"/>
           <include name="redirectThankYouPage"/>
           <include name="HomePage_setUp"/>

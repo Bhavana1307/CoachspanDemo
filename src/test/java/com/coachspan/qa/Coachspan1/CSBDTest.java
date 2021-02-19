@@ -31,7 +31,7 @@ public class CSBDTest extends BaseTest {
 		System.out.println(link);
 	}
 	
-	@Test
+	@Test(description="Verify Program CEE link is copied successfully")
 	public void launchCEEPage() 
 	{
         csbdpage.landonCEE();		

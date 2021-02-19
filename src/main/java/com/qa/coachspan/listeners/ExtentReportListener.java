@@ -63,15 +63,16 @@ public class ExtentReportListener extends com.qa.coachspan.base.BasePage impleme
 		test.remove();
 	}
 
-	public synchronized void onTestStart(ITestResult result) {
-		String methodName = result.getMethod().getMethodName();
-		String qualifiedName = result.getMethod().getQualifiedName();
+	public synchronized void onTestStart(ITestResult result)
+   {
+		String methodName = result.getMethod().getDescription();
+		String qualifiedName = result.getMethod().getDescription();
 		int last = qualifiedName.lastIndexOf(".");
 		int mid = qualifiedName.substring(0, last).lastIndexOf(".");
 		String className = qualifiedName.substring(mid + 1, last);
 
 		System.out.println(methodName + " started!");
-		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(),
+		ExtentTest extentTest = extent.createTest(result.getMethod().getDescription(),
 				result.getMethod().getDescription());
 
 		extentTest.assignCategory(result.getTestContext().getSuite().getName());
@@ -85,13 +86,13 @@ public class ExtentReportListener extends com.qa.coachspan.base.BasePage impleme
 	}
 
 	public synchronized void onTestSuccess(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " passed!"));
+		System.out.println((result.getMethod().getDescription() + " passed!"));
 		test.get().pass("Test passed");
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	public synchronized void onTestFailure(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " failed!"));
+		System.out.println((result.getMethod().getDescription() + " failed!"));
 		try {
 			test.get().fail(result.getThrowable(),
 					MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
@@ -102,7 +103,7 @@ public class ExtentReportListener extends com.qa.coachspan.base.BasePage impleme
 	}
 
 	public synchronized void onTestSkipped(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " skipped!"));
+		System.out.println((result.getMethod().getDescription() + " skipped!"));
 		try {
 			test.get().skip(result.getThrowable(),
 					MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
@@ -114,7 +115,7 @@ public class ExtentReportListener extends com.qa.coachspan.base.BasePage impleme
 	}
 
 	public synchronized void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getMethodName()));
+		System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getDescription()));
 	}
 
 	private Date getTime(long millis) {

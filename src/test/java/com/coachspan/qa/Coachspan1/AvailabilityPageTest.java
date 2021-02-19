@@ -20,16 +20,16 @@ public class AvailabilityPageTest extends BaseTest
 	}
 	
 	
-	@Test
-	public void fieldvisibility()
+	@Test(description="Verify if PrimaryEmail field is visible")
+	public void verifyPrimaryEmailField()
 	{
 	boolean visible = availabilitypage.fieldvisible();
 		System.out.println(visible);
 	}
 	
 
-	@Test
-	public void redirectThankYouPage()
+	@Test(description="Verify if Member is created successfully")
+	public void RedirectToRegForm()
 	{
 		availabilitypage.CreateMemeberAccount(
 				prop.getProperty("phonetype"), prop.getProperty("accountpassword"));

@@ -17,7 +17,7 @@ public class CEEPageTest extends BaseTest{
 	   	
 	}
 	
-	@Test
+	@Test(description="Verify if AvailabilityPage shown from CEE")
 	public void landonAvailabilityPage() 
 	{
 		 String emailstring =

@@ -9,7 +9,7 @@ import com.qa.coachspan.pages.LoginPage;
 public class LoginPageTest  extends BaseTest
 {
 
-	@Test(priority=1)
+	@Test(priority=1,description="Verify title of coachspan")
 	public void VerifyLoginPageTitle() 
 	{
 		String title = loginpage.getLoginPageTitle();
@@ -23,7 +23,7 @@ public class LoginPageTest  extends BaseTest
 		Assert.assertTrue(loginpage.isForgotPasswordlinkexist());
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3, description="Verify if user is logged in successfully")
 	public void login() 
 	{
 		loginpage.DoLogin(prop.getProperty("username"), prop.getProperty("password"));

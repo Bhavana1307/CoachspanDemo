@@ -16,7 +16,7 @@ public class HomePageTest extends BaseTest
 		homepage = loginpage.DoLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	@Test
+	@Test(description="Verify after login Org link is shown to AYS admin")
 	public void homeorglinkTest() 
 	
 	{
@@ -30,7 +30,7 @@ public class HomePageTest extends BaseTest
 		Assert.assertEquals(heading, "Organization List");
 	}
 	
-	@Test
+	@Test(description="Verify if given org is successfully selected")
 	public void selectContext() 
 	{	
 		homepage.selectContextvalues
