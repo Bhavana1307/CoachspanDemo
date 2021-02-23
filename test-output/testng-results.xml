@@ -1,133 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="14" passed="12">
+<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Coachspan Regression Test Suite" duration-ms="235411" started-at="2021-02-23T10:50:55 IST" finished-at="2021-02-23T10:54:51 IST">
+  <suite name="Default suite" duration-ms="143223" started-at="2021-02-23T12:54:44 IST" finished-at="2021-02-23T12:57:08 IST">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="10845" started-at="2021-02-23T10:50:55 IST" finished-at="2021-02-23T10:51:06 IST">
-      <class name="com.coachspan.qa.Coachspan1.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.LoginPageTest@e93f3d5]" name="setUp" is-config="true" duration-ms="7659" started-at="2021-02-23T10:50:56 IST" finished-at="2021-02-23T10:51:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:1, instance:com.coachspan.qa.Coachspan1.LoginPageTest@e93f3d5]" name="verifyLoginPageTitle" duration-ms="118" started-at="2021-02-23T10:51:03 IST" description="Verify title of coachspan" finished-at="2021-02-23T10:51:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPageTitle -->
-        <test-method status="PASS" signature="verifyForgotPasswordLink()[pri:2, instance:com.coachspan.qa.Coachspan1.LoginPageTest@e93f3d5]" name="verifyForgotPasswordLink" duration-ms="83" started-at="2021-02-23T10:51:04 IST" description="Verify forgot link is shown successfully" finished-at="2021-02-23T10:51:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordLink -->
-        <test-method status="PASS" signature="verifyLoginFunctionality()[pri:3, instance:com.coachspan.qa.Coachspan1.LoginPageTest@e93f3d5]" name="verifyLoginFunctionality" duration-ms="1953" started-at="2021-02-23T10:51:04 IST" description="Verify if user is logged in successfully" finished-at="2021-02-23T10:51:06 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginFunctionality -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.LoginPageTest@e93f3d5]" name="teardown" is-config="true" duration-ms="697" started-at="2021-02-23T10:51:06 IST" finished-at="2021-02-23T10:51:06 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.coachspan.qa.Coachspan1.LoginPageTest -->
-    </test> <!-- Login Test -->
-    <test name="homepage test" duration-ms="52262" started-at="2021-02-23T10:50:55 IST" finished-at="2021-02-23T10:51:48 IST">
-      <class name="com.coachspan.qa.Coachspan1.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2bc12da]" name="setUp" is-config="true" duration-ms="7607" started-at="2021-02-23T10:50:56 IST" finished-at="2021-02-23T10:51:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2bc12da]" name="HomePage_setUp" is-config="true" duration-ms="1912" started-at="2021-02-23T10:51:03 IST" finished-at="2021-02-23T10:51:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage_setUp -->
-        <test-method status="PASS" signature="verfiyHomeOrgLinkTest()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2bc12da]" name="verfiyHomeOrgLinkTest" duration-ms="57" started-at="2021-02-23T10:51:05 IST" description="Verify after login Org link is shown to AYS admin" finished-at="2021-02-23T10:51:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verfiyHomeOrgLinkTest -->
-        <test-method status="PASS" signature="verifyContextBarSelection()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2bc12da]" name="verifyContextBarSelection" duration-ms="41831" started-at="2021-02-23T10:51:05 IST" description="Verify if given org is successfully selected" finished-at="2021-02-23T10:51:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContextBarSelection -->
-        <test-method status="PASS" signature="verifyHomePageheadingTest()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2bc12da]" name="verifyHomePageheadingTest" duration-ms="67" started-at="2021-02-23T10:51:47 IST" finished-at="2021-02-23T10:51:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageheadingTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2bc12da]" name="teardown" is-config="true" duration-ms="717" started-at="2021-02-23T10:51:47 IST" finished-at="2021-02-23T10:51:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.coachspan.qa.Coachspan1.HomePageTest -->
-    </test> <!-- homepage test -->
-    <test name="Coachespage test" duration-ms="63388" started-at="2021-02-23T10:51:07 IST" finished-at="2021-02-23T10:52:10 IST">
-      <class name="com.coachspan.qa.Coachspan1.CoachesPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@17ca8b92]" name="setUp" is-config="true" duration-ms="4954" started-at="2021-02-23T10:51:07 IST" finished-at="2021-02-23T10:51:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@17ca8b92]" name="HomePage_setUp" is-config="true" duration-ms="43759" started-at="2021-02-23T10:51:12 IST" finished-at="2021-02-23T10:51:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage_setUp -->
-        <test-method status="PASS" signature="verifyCL4SPageShown()[pri:1, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@17ca8b92]" name="verifyCL4SPageShown" duration-ms="8783" started-at="2021-02-23T10:51:56 IST" finished-at="2021-02-23T10:52:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCL4SPageShown -->
-        <test-method status="PASS" signature="verifyCL4SPageHeadingTest()[pri:2, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@17ca8b92]" name="verifyCL4SPageHeadingTest" duration-ms="5059" started-at="2021-02-23T10:52:05 IST" finished-at="2021-02-23T10:52:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCL4SPageHeadingTest -->
-        <test-method status="PASS" signature="verifyTotalnumbercoachsonCL4S()[pri:3, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@17ca8b92]" name="verifyTotalnumbercoachsonCL4S" duration-ms="77" started-at="2021-02-23T10:52:10 IST" finished-at="2021-02-23T10:52:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalnumbercoachsonCL4S -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@17ca8b92]" name="teardown" is-config="true" duration-ms="725" started-at="2021-02-23T10:52:10 IST" finished-at="2021-02-23T10:52:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.coachspan.qa.Coachspan1.CoachesPageTest -->
-    </test> <!-- Coachespage test -->
-    <test name="CSBD Page test" duration-ms="77408" started-at="2021-02-23T10:51:48 IST" finished-at="2021-02-23T10:53:05 IST">
-      <class name="com.coachspan.qa.Coachspan1.CSBDTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.CSBDTest@54dcbb9f]" name="setUp" is-config="true" duration-ms="5400" started-at="2021-02-23T10:51:48 IST" finished-at="2021-02-23T10:51:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.CSBDTest@54dcbb9f]" name="HomePage_setUp" is-config="true" duration-ms="45252" started-at="2021-02-23T10:51:53 IST" finished-at="2021-02-23T10:52:39 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage_setUp -->
-        <test-method status="PASS" signature="verifyCEELPageLinkPageCopied()[pri:0, instance:com.coachspan.qa.Coachspan1.CSBDTest@54dcbb9f]" name="verifyCEELPageLinkPageCopied" duration-ms="26000" started-at="2021-02-23T10:52:39 IST" description="Verify Program CEE link is copied successfully" finished-at="2021-02-23T10:53:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCEELPageLinkPageCopied -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.CSBDTest@54dcbb9f]" name="teardown" is-config="true" duration-ms="735" started-at="2021-02-23T10:53:05 IST" finished-at="2021-02-23T10:53:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.coachspan.qa.Coachspan1.CSBDTest -->
-    </test> <!-- CSBD Page test -->
-    <test name="Availability Page test" duration-ms="160329" started-at="2021-02-23T10:52:11 IST" finished-at="2021-02-23T10:54:51 IST">
+    <test name="Default test" duration-ms="143223" started-at="2021-02-23T12:54:44 IST" finished-at="2021-02-23T12:57:08 IST">
       <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@516ebdf8]" name="setUp" is-config="true" duration-ms="8145" started-at="2021-02-23T10:52:11 IST" finished-at="2021-02-23T10:52:19 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@5db4c359]" name="setUp" is-config="true" duration-ms="12861" started-at="2021-02-23T12:54:44 IST" finished-at="2021-02-23T12:54:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@516ebdf8]" name="HomePage_setUp" is-config="true" duration-ms="110979" started-at="2021-02-23T10:52:19 IST" finished-at="2021-02-23T10:54:10 IST">
+        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@5db4c359]" name="HomePage_setUp" is-config="true" duration-ms="109102" started-at="2021-02-23T12:54:57 IST" finished-at="2021-02-23T12:56:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePage_setUp -->
-        <test-method status="PASS" signature="VerifyCoachCreationFunctionality()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@516ebdf8]" name="VerifyCoachCreationFunctionality" duration-ms="40410" started-at="2021-02-23T10:54:10 IST" description="Verify if Member is created successfully" finished-at="2021-02-23T10:54:50 IST">
+        <test-method status="FAIL" signature="VerifyCoachCreationFunctionality()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@5db4c359]" name="VerifyCoachCreationFunctionality" duration-ms="20179" started-at="2021-02-23T12:56:47 IST" description="Verify if Member is created successfully" finished-at="2021-02-23T12:57:07 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='emailAddress']"}
+  (Session info: chrome=88.0.4324.182)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-72A17Q8C', ip: '192.168.31.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aacf74ff9f85204008d3603bc91fa9c6
+*** Element info: {Using=xpath, value=//input[@id='emailAddress']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='emailAddress']"}
+  (Session info: chrome=88.0.4324.182)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-72A17Q8C', ip: '192.168.31.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aacf74ff9f85204008d3603bc91fa9c6
+*** Element info: {Using=xpath, value=//input[@id='emailAddress']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.qa.coachspan.pages.AvailabilityPage.CreateMemeberAccount(AvailabilityPage.java:73)
+at com.coachspan.qa.Coachspan1.AvailabilityPageTest.VerifyCoachCreationFunctionality(AvailabilityPageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoachCreationFunctionality -->
-        <test-method status="PASS" signature="verifyVisibilityofPrimaryEmailField()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@516ebdf8]" name="verifyVisibilityofPrimaryEmailField" duration-ms="81" started-at="2021-02-23T10:54:50 IST" description="Verify if PrimaryEmail field is visible" finished-at="2021-02-23T10:54:50 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyVisibilityofPrimaryEmailField -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@516ebdf8]" name="teardown" is-config="true" duration-ms="701" started-at="2021-02-23T10:54:50 IST" finished-at="2021-02-23T10:54:51 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@5db4c359]" name="teardown" is-config="true" duration-ms="779" started-at="2021-02-23T12:57:07 IST" finished-at="2021-02-23T12:57:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.coachspan.qa.Coachspan1.AvailabilityPageTest -->
-    </test> <!-- Availability Page test -->
-  </suite> <!-- Coachspan Regression Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
