@@ -13,8 +13,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <aspectj.version>1.8.10</aspectj.version>
-     <maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
 <build>
@@ -54,9 +52,7 @@
 						<version>${aspectj.version}</version>
 					</dependency>
 				</dependencies>
-			</plugin>
-       
-        
+			</plugin>      
     </plugins>
 </build>
 
