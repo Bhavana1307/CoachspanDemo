@@ -3,14 +3,6 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test thread-count="1" verbose="0" name="Surefire test(failed)">
     <classes>
-      <class name="com.coachspan.qa.Coachspan1.CSBDTest">
-        <methods>
-          <include name="HomePage_setUp"/>
-          <include name="teardown"/>
-          <include name="verifyCEELPageLinkPageCopied"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.coachspan.qa.Coachspan1.CSBDTest -->
       <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
         <methods>
           <include name="VerifyCoachCreationFunctionality"/>
@@ -20,24 +12,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.coachspan.qa.Coachspan1.AvailabilityPageTest -->
-      <class name="com.coachspan.qa.Coachspan1.CEEPageTest">
-        <methods>
-          <include name="HomePage_setUp"/>
-          <include name="teardown"/>
-          <include name="verifyCEEPageShown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.coachspan.qa.Coachspan1.CEEPageTest -->
-      <class name="com.coachspan.qa.Coachspan1.HomePageTest">
-        <methods>
-          <include name="verfiyHomeOrgLinkTest"/>
-          <include name="verifyHomePageheadingTest"/>
-          <include name="teardown"/>
-          <include name="HomePage_setUp"/>
-          <include name="verifyContextBarSelection"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.coachspan.qa.Coachspan1.HomePageTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

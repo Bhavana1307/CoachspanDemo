@@ -2,53 +2,35 @@
 <testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="143223" started-at="2021-02-23T12:54:44 IST" finished-at="2021-02-23T12:57:08 IST">
+  <suite name="Default suite" duration-ms="128433" started-at="2021-02-23T16:46:34 IST" finished-at="2021-02-23T16:48:43 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="143223" started-at="2021-02-23T12:54:44 IST" finished-at="2021-02-23T12:57:08 IST">
+    <test name="Default test" duration-ms="128433" started-at="2021-02-23T16:46:34 IST" finished-at="2021-02-23T16:48:43 IST">
       <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@5db4c359]" name="setUp" is-config="true" duration-ms="12861" started-at="2021-02-23T12:54:44 IST" finished-at="2021-02-23T12:54:57 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@7de0c6ae]" name="setUp" is-config="true" duration-ms="12579" started-at="2021-02-23T16:46:34 IST" finished-at="2021-02-23T16:46:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@5db4c359]" name="HomePage_setUp" is-config="true" duration-ms="109102" started-at="2021-02-23T12:54:57 IST" finished-at="2021-02-23T12:56:46 IST">
+        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@7de0c6ae]" name="HomePage_setUp" is-config="true" duration-ms="100580" started-at="2021-02-23T16:46:47 IST" finished-at="2021-02-23T16:48:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePage_setUp -->
-        <test-method status="FAIL" signature="VerifyCoachCreationFunctionality()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@5db4c359]" name="VerifyCoachCreationFunctionality" duration-ms="20179" started-at="2021-02-23T12:56:47 IST" description="Verify if Member is created successfully" finished-at="2021-02-23T12:57:07 IST">
+        <test-method status="FAIL" signature="VerifyCoachCreationFunctionality()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@7de0c6ae]" name="VerifyCoachCreationFunctionality" duration-ms="14468" started-at="2021-02-23T16:48:27 IST" description="Verify if Member is created successfully" finished-at="2021-02-23T16:48:42 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='emailAddress']"}
-  (Session info: chrome=88.0.4324.182)
+              <![CDATA[Cannot locate an element using xpath=//input[@id='emailAddress']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-72A17Q8C', ip: '192.168.31.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: aacf74ff9f85204008d3603bc91fa9c6
-*** Element info: {Using=xpath, value=//input[@id='emailAddress']}]]>
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='emailAddress']"}
-  (Session info: chrome=88.0.4324.182)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@id='emailAddress']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-72A17Q8C', ip: '192.168.31.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: aacf74ff9f85204008d3603bc91fa9c6
-*** Element info: {Using=xpath, value=//input[@id='emailAddress']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -88,7 +70,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoachCreationFunctionality -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@5db4c359]" name="teardown" is-config="true" duration-ms="779" started-at="2021-02-23T12:57:07 IST" finished-at="2021-02-23T12:57:08 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@7de0c6ae]" name="teardown" is-config="true" duration-ms="569" started-at="2021-02-23T16:48:42 IST" finished-at="2021-02-23T16:48:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
