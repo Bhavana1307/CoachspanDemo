@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="156.071" tests="17" errors="0" skipped="8" failures="9">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="145.965" tests="10" errors="0" skipped="5" failures="5">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_261\bin"/>
@@ -64,18 +64,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="RedirectToRegForm" classname="com.coachspan.qa.Coachspan1.AvailabilityPageTest" time="15.058">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;emailAddress&apos;]&quot;}&#10;  (Session info: chrome=88.0.4324.182)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-72A17Q8C&apos;, ip: &apos;172.27.245.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: be4d1a24986892544b85fc00d6ef6a35&#10;*** Element info: {Using=xpath, value=//input[@id=&apos;emailAddress&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="VerifyCoachCreationFunctionality" classname="com.coachspan.qa.Coachspan1.AvailabilityPageTest" time="20.049">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;emailAddress&apos;]&quot;}&#10;  (Session info: chrome=88.0.4324.182)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-72A17Q8C&apos;, ip: &apos;172.27.245.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:57374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7e7e6d939741e38da451a4d8980e96c2&#10;*** Element info: {Using=xpath, value=//input[@id=&apos;emailAddress&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='emailAddress']"}
   (Session info: chrome=88.0.4324.182)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-72A17Q8C', ip: '172.27.245.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+System info: host: 'LAPTOP-72A17Q8C', ip: '172.27.245.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: be4d1a24986892544b85fc00d6ef6a35
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:57374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e7e6d939741e38da451a4d8980e96c2
 *** Element info: {Using=xpath, value=//input[@id='emailAddress']}
-	at com.coachspan.qa.Coachspan1.AvailabilityPageTest.RedirectToRegForm(AvailabilityPageTest.java:34)
+	at com.coachspan.qa.Coachspan1.AvailabilityPageTest.VerifyCoachCreationFunctionality(AvailabilityPageTest.java:34)
 </failure>
     <system-out><![CDATA[broser value is : chrome
 Login with bhavana@ays.com and Testing@123
@@ -85,85 +85,56 @@ https://dev.coachspan.com/coach_entry/program/Haze_Basketball__Basketball__zHaze
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 19250
+Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 30696
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Feb 22, 2021 7:48:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Feb 23, 2021 11:34:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="verifyPrimaryEmailField" classname="com.coachspan.qa.Coachspan1.AvailabilityPageTest" time="10.067">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;emailAddress&apos;]&quot;}&#10;  (Session info: chrome=88.0.4324.182)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-72A17Q8C&apos;, ip: &apos;172.27.245.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: be4d1a24986892544b85fc00d6ef6a35&#10;*** Element info: {Using=xpath, value=//input[@id=&apos;emailAddress&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="verifyVisibilityofPrimaryEmailField" classname="com.coachspan.qa.Coachspan1.AvailabilityPageTest" time="10.028">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;emailAddress&apos;]&quot;}&#10;  (Session info: chrome=88.0.4324.182)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-72A17Q8C&apos;, ip: &apos;172.27.245.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:57374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7e7e6d939741e38da451a4d8980e96c2&#10;*** Element info: {Using=xpath, value=//input[@id=&apos;emailAddress&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='emailAddress']"}
   (Session info: chrome=88.0.4324.182)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-72A17Q8C', ip: '172.27.245.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+System info: host: 'LAPTOP-72A17Q8C', ip: '172.27.245.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: be4d1a24986892544b85fc00d6ef6a35
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Raj\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:57374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e7e6d939741e38da451a4d8980e96c2
 *** Element info: {Using=xpath, value=//input[@id='emailAddress']}
-	at com.coachspan.qa.Coachspan1.AvailabilityPageTest.verifyPrimaryEmailField(AvailabilityPageTest.java:26)
+	at com.coachspan.qa.Coachspan1.AvailabilityPageTest.verifyVisibilityofPrimaryEmailField(AvailabilityPageTest.java:26)
 </failure>
   </testcase>
-  <testcase name="HomePage_setUp" classname="com.coachspan.qa.Coachspan1.CEEPageTest" time="10.076">
+  <testcase name="HomePage_setUp" classname="com.coachspan.qa.Coachspan1.CEEPageTest" time="10.031">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.coachspan.qa.Coachspan1.CEEPageTest.HomePage_setUp(CEEPageTest.java:15)
 </failure>
   </testcase>
-  <testcase name="landonAvailabilityPage" classname="com.coachspan.qa.Coachspan1.CEEPageTest" time="0">
+  <testcase name="verifyCEEPageShown" classname="com.coachspan.qa.Coachspan1.CEEPageTest" time="0">
     <skipped/>
   </testcase>
-  <testcase name="HomePage_setUp" classname="com.coachspan.qa.Coachspan1.CoachesPageTest" time="10.088">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.coachspan.qa.Coachspan1.CoachesPageTest.HomePage_setUp(CoachesPageTest.java:20)
-</failure>
-  </testcase>
-  <testcase name="coachespage" classname="com.coachspan.qa.Coachspan1.CoachesPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="noofcoaches" classname="com.coachspan.qa.Coachspan1.CoachesPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="pageheadingTest" classname="com.coachspan.qa.Coachspan1.CoachesPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="HomePage_setUp" classname="com.coachspan.qa.Coachspan1.CSBDTest" time="10.11">
+  <testcase name="HomePage_setUp" classname="com.coachspan.qa.Coachspan1.CSBDTest" time="10.042">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.coachspan.qa.Coachspan1.CSBDTest.HomePage_setUp(CSBDTest.java:16)
 </failure>
   </testcase>
-  <testcase name="launchCEEPage" classname="com.coachspan.qa.Coachspan1.CSBDTest" time="0">
+  <testcase name="verifyCEELPageLinkPageCopied" classname="com.coachspan.qa.Coachspan1.CSBDTest" time="0">
     <skipped/>
   </testcase>
-  <testcase name="HomePage_setUp" classname="com.coachspan.qa.Coachspan1.HomePageTest" time="10.121">
+  <testcase name="HomePage_setUp" classname="com.coachspan.qa.Coachspan1.HomePageTest" time="10.052">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.coachspan.qa.Coachspan1.HomePageTest.HomePage_setUp(HomePageTest.java:16)
 </failure>
   </testcase>
-  <testcase name="homeheadingTest" classname="com.coachspan.qa.Coachspan1.HomePageTest" time="0">
+  <testcase name="verfiyHomeOrgLinkTest" classname="com.coachspan.qa.Coachspan1.HomePageTest" time="0">
     <skipped/>
   </testcase>
-  <testcase name="homeorglinkTest" classname="com.coachspan.qa.Coachspan1.HomePageTest" time="0">
+  <testcase name="verifyContextBarSelection" classname="com.coachspan.qa.Coachspan1.HomePageTest" time="0">
     <skipped/>
   </testcase>
-  <testcase name="selectContext" classname="com.coachspan.qa.Coachspan1.HomePageTest" time="0">
+  <testcase name="verifyHomePageheadingTest" classname="com.coachspan.qa.Coachspan1.HomePageTest" time="0">
     <skipped/>
-  </testcase>
-  <testcase name="VerifyLoginPageTitle" classname="com.coachspan.qa.Coachspan1.LoginPageTest" time="0.003">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.coachspan.qa.Coachspan1.LoginPageTest.VerifyLoginPageTitle(LoginPageTest.java:15)
-</failure>
-  </testcase>
-  <testcase name="verifyforgotpasswordlink" classname="com.coachspan.qa.Coachspan1.LoginPageTest" time="0.003">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.coachspan.qa.Coachspan1.LoginPageTest.verifyforgotpasswordlink(LoginPageTest.java:23)
-</failure>
-  </testcase>
-  <testcase name="login" classname="com.coachspan.qa.Coachspan1.LoginPageTest" time="0.003">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.coachspan.qa.Coachspan1.LoginPageTest.login(LoginPageTest.java:29)
-</failure>
   </testcase>
 </testsuite>
