@@ -69,7 +69,7 @@ public class AvailabilityPage extends BasePage {
 	
 	public void CreateMemeberAccount(String phonetype, String accountpassword)
 	{
-		elementActions.shortwaitforElement();
+		elementActions.longwaitforElement();
 		String valueprimary = driver.findElement(primaryemail).getAttribute("value");
 		System.out.println(valueprimary);
 		driver.findElement(retypeemail).sendKeys(valueprimary);	

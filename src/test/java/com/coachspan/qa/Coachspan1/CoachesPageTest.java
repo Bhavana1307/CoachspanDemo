@@ -21,21 +21,20 @@ public class CoachesPageTest extends BaseTest
 		csbdpage=homepage.selectContextvalues(driver, prop.getProperty("orgname"), homepage.orgContext, homepage.listoforgs);	
 	}
 	
-	@Test
-	public void coachespage() 
-	{
-		
+	@Test(priority=1)
+	public void verifyCL4SPageShown() 
+	{		
 	  coachpage=homepage.clickoncoaches();
 	}
 	
-	@Test
-	public void pageheadingTest() 
+	@Test(priority=2)
+	public void verifyCL4SPageHeadingTest() 
 	{		
 		Assert.assertTrue(coachpage.isheadingvisible());	
 	}
 	
-	@Test
-	public void noofcoaches() 
+	@Test(priority=3)
+	public void verifyTotalnumbercoachsonCL4S() 
 	{
 		Assert.assertEquals(coachpage.numberofcoaches(), coachpage.reccountgrid());
 		

@@ -18,7 +18,7 @@ public class CEEPageTest extends BaseTest{
 	}
 	
 	@Test(description="Verify if AvailabilityPage shown from CEE")
-	public void landonAvailabilityPage() 
+	public void verifyCEEPageShown() 
 	{
 		 String emailstring =
 	      csbdpage.associatedEmailID(prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("status"));

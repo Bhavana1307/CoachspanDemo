@@ -3,13 +3,28 @@
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Coachspan Regression Test Suite]" parallel="tests">
   <listeners>
     <listener class-name="com.qa.coachspan.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.coachspan.listeners.TestAllureListerner"/>
   </listeners>
+  <test thread-count="2" name="Coachespage test(failed)" parallel="tests">
+    <classes>
+      <class name="com.coachspan.qa.Coachspan1.CoachesPageTest">
+        <methods>
+          <include name="verifyCL4SPageHeadingTest"/>
+          <include name="VerifyTotalnumbercoachsonCL4S"/>
+          <include name="HomePage_setUp"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.coachspan.qa.Coachspan1.CoachesPageTest -->
+    </classes>
+  </test> <!-- Coachespage test(failed) -->
   <test thread-count="2" name="Availability Page test(failed)" parallel="tests">
     <classes>
       <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
         <methods>
+          <include name="VerifyCoachCreationFunctionality"/>
+          <include name="verifyVisibilityofPrimaryEmailField"/>
           <include name="teardown"/>
-          <include name="redirectThankYouPage"/>
           <include name="HomePage_setUp"/>
           <include name="setUp"/>
         </methods>

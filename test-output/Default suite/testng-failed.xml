@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
+      <class name="com.coachspan.qa.Coachspan1.CoachesPageTest">
         <methods>
-          <include name="teardown"/>
-          <include name="redirectThankYouPage"/>
+          <include name="verifyCL4SPageHeadingTest"/>
+          <include name="verifyTotalnumbercoachsonCL4S"/>
           <include name="HomePage_setUp"/>
+          <include name="teardown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.coachspan.qa.Coachspan1.AvailabilityPageTest -->
+      </class> <!-- com.coachspan.qa.Coachspan1.CoachesPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

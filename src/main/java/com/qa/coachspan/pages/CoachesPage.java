@@ -27,6 +27,7 @@ public class CoachesPage extends BasePage {
 	
 	public boolean isheadingvisible() 
 	{
+		elementActions.shortwaitforElement();
 		 return driver.findElement(pageheading).isDisplayed();
 		
 	}

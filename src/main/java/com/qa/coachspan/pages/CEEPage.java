@@ -24,6 +24,7 @@ public class CEEPage extends BasePage{
 	
 	public AvailabilityPage launchAvailabilitypage(String email) 
 	{
+		elementActions.shortwaitforElement();
 		driver.findElement(inputemail).sendKeys(email);
 		driver.findElement(Okbutton).click();
 		//driver.findElement(Continuebutton).click();

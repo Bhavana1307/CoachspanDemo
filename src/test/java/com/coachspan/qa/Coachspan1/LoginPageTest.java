@@ -10,21 +10,21 @@ public class LoginPageTest  extends BaseTest
 {
 
 	@Test(priority=1,description="Verify title of coachspan")
-	public void VerifyLoginPageTitle() 
+	public void verifyLoginPageTitle() 
 	{
 		String title = loginpage.getLoginPageTitle();
 		System.out.println("title is " + title);
 		Assert.assertEquals(title, "CoachSpan");
 	}
 	
-	@Test(priority=2)
-	public void verifyforgotpasswordlink() 
+	@Test(priority=2,description="Verify forgot link is shown successfully")
+	public void verifyForgotPasswordLink() 
 	{
 		Assert.assertTrue(loginpage.isForgotPasswordlinkexist());
 	}
 	
 	@Test(priority=3, description="Verify if user is logged in successfully")
-	public void login() 
+	public void verifyLoginFunctionality() 
 	{
 		loginpage.DoLogin(prop.getProperty("username"), prop.getProperty("password"));
 		

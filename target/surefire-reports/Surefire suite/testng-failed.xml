@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="com.coachspan.qa.Coachspan1.CSBDTest">
+        <methods>
+          <include name="launchCEEPage"/>
+          <include name="HomePage_setUp"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.coachspan.qa.Coachspan1.CSBDTest -->
+      <class name="com.coachspan.qa.Coachspan1.LoginPageTest">
+        <methods>
+          <include name="VerifyLoginPageTitle"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyforgotpasswordlink"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.coachspan.qa.Coachspan1.LoginPageTest -->
+      <class name="com.coachspan.qa.Coachspan1.CoachesPageTest">
+        <methods>
+          <include name="coachespage"/>
+          <include name="noofcoaches"/>
+          <include name="pageheadingTest"/>
+          <include name="HomePage_setUp"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.coachspan.qa.Coachspan1.CoachesPageTest -->
+      <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
+        <methods>
+          <include name="RedirectToRegForm"/>
+          <include name="verifyPrimaryEmailField"/>
+          <include name="teardown"/>
+          <include name="HomePage_setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.coachspan.qa.Coachspan1.AvailabilityPageTest -->
+      <class name="com.coachspan.qa.Coachspan1.CEEPageTest">
+        <methods>
+          <include name="HomePage_setUp"/>
+          <include name="landonAvailabilityPage"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.coachspan.qa.Coachspan1.CEEPageTest -->
+      <class name="com.coachspan.qa.Coachspan1.HomePageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="homeheadingTest"/>
+          <include name="HomePage_setUp"/>
+          <include name="homeorglinkTest"/>
+          <include name="selectContext"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.coachspan.qa.Coachspan1.HomePageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

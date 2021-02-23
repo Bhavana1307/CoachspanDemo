@@ -17,21 +17,21 @@ public class HomePageTest extends BaseTest
 	}
 	
 	@Test(description="Verify after login Org link is shown to AYS admin")
-	public void homeorglinkTest() 
+	public void verfiyHomeOrgLinkTest() 
 	
 	{
 		Assert.assertTrue(homepage.verifyorglink());	
 	}
 	
 	@Test
-	public void homeheadingTest() 
+	public void verifyHomePageheadingTest() 
 	{		
 		String heading = homepage.verifyTitle();
 		Assert.assertEquals(heading, "Organization List");
 	}
 	
 	@Test(description="Verify if given org is successfully selected")
-	public void selectContext() 
+	public void verifyContextBarSelection() 
 	{	
 		homepage.selectContextvalues
 		(driver, prop.getProperty("orgname"), homepage.orgContext, homepage.listoforgs);

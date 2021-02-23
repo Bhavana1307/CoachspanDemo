@@ -32,7 +32,7 @@ public class CSBDTest extends BaseTest {
 	}
 	
 	@Test(description="Verify Program CEE link is copied successfully")
-	public void launchCEEPage() 
+	public void verifyCEELPageLinkPageCopied() 
 	{
         csbdpage.landonCEE();		
 	}

@@ -1,4 +1,4 @@
-package com.qa.coachspan.listeners;
+	package com.qa.coachspan.listeners;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,7 +28,8 @@ public class ExtentReportListener extends com.qa.coachspan.base.BasePage impleme
 	private static ExtentReports extent = init();
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 
-	private static ExtentReports init() {
+	private static ExtentReports init()
+	{
 
 		Path path = Paths.get(OUTPUT_FOLDER);
 		// if directory exists?
@@ -53,7 +54,8 @@ public class ExtentReportListener extends com.qa.coachspan.base.BasePage impleme
 		return extent;
 	}
 
-	public synchronized void onStart(ITestContext context) {
+	public synchronized void onStart(ITestContext context)
+	{
 		System.out.println("Test Suite started!");
 	}
 
@@ -63,16 +65,15 @@ public class ExtentReportListener extends com.qa.coachspan.base.BasePage impleme
 		test.remove();
 	}
 
-	public synchronized void onTestStart(ITestResult result)
-   {
-		String methodName = result.getMethod().getDescription();
-		String qualifiedName = result.getMethod().getDescription();
+	public synchronized void onTestStart(ITestResult result) {
+		String methodName = result.getMethod().getMethodName();
+		String qualifiedName = result.getMethod().getQualifiedName();
 		int last = qualifiedName.lastIndexOf(".");
 		int mid = qualifiedName.substring(0, last).lastIndexOf(".");
 		String className = qualifiedName.substring(mid + 1, last);
 
 		System.out.println(methodName + " started!");
-		ExtentTest extentTest = extent.createTest(result.getMethod().getDescription(),
+		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(),
 				result.getMethod().getDescription());
 
 		extentTest.assignCategory(result.getTestContext().getSuite().getName());
@@ -86,24 +87,25 @@ public class ExtentReportListener extends com.qa.coachspan.base.BasePage impleme
 	}
 
 	public synchronized void onTestSuccess(ITestResult result) {
-		System.out.println((result.getMethod().getDescription() + " passed!"));
+		System.out.println((result.getMethod().getMethodName() + " passed!"));
 		test.get().pass("Test passed");
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	public synchronized void onTestFailure(ITestResult result) {
-		System.out.println((result.getMethod().getDescription() + " failed!"));
+		System.out.println((result.getMethod().getMethodName() + " failed!"));
 		try {
 			test.get().fail(result.getThrowable(),
 					MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
 		} catch (IOException e) {
-			System.err.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
+			System.err
+					.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
 		}
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	public synchronized void onTestSkipped(ITestResult result) {
-		System.out.println((result.getMethod().getDescription() + " skipped!"));
+		System.out.println((result.getMethod().getMethodName() + " skipped!"));
 		try {
 			test.get().skip(result.getThrowable(),
 					MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
@@ -115,7 +117,7 @@ public class ExtentReportListener extends com.qa.coachspan.base.BasePage impleme
 	}
 
 	public synchronized void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getDescription()));
+		System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getMethodName()));
 	}
 
 	private Date getTime(long millis) {
@@ -123,5 +125,4 @@ public class ExtentReportListener extends com.qa.coachspan.base.BasePage impleme
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();
 	}
-
 }
