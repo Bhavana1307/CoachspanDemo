@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.coachspan.qa.Coachspan1.CSBDTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 70.727 s - in com.coachspan.qa.Coachspan1.CSBDTest
