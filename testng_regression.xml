@@ -8,7 +8,6 @@ parallel ="tests" thread-count="2">
 	<listeners>
 	<listener class-name="com.qa.coachspan.listeners.ExtentReportListener" />
 	<listener class-name="com.qa.coachspan.listeners.TestAllureListerner" />
-	
 	</listeners>
 	
 	<test name="Login Test" verbose="2">
