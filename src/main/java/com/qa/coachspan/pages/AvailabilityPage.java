@@ -20,19 +20,19 @@ public class AvailabilityPage extends BasePage {
 	private WebDriver driver;
 	ElementActions elementActions;
 	JavaScriptUtils javascripts;
-	private By primaryemail = By.xpath("//input[@id='emailAddress']");
-	private By phonenoelement = By.xpath("//input[@id='phoneNumber']");
-	private By submitbuton= By.xpath("//input[@name='submit']");
-	private By accountpassele = By.xpath("//input[@name='account.password']");
-	private By retypeaccpassele = By.xpath("//input[@name='account.retypedPassword']");
-	private By retypeemail = By.xpath("(//input[@id='retypeEmailAddress'])");
-	private By phonetypelist = By.xpath("//ul[@id='drop_downForPhoneNumberType_listbox']/li");
+	private By primaryEmail = By.xpath("//input[@id='emailAddress']");
+	private By phonenoElement = By.xpath("//input[@id='phoneNumber']");
+	private By submitButton= By.xpath("//input[@name='submit']");
+	private By accountPassele = By.xpath("//input[@name='account.password']");
+	private By retypeAccPasswordElement = By.xpath("//input[@name='account.retypedPassword']");
+	private By retypeEmail = By.xpath("(//input[@id='retypeEmailAddress'])");
+	private By phoneTypeList = By.xpath("//ul[@id='drop_downForPhoneNumberType_listbox']/li");
 	private By TnC = By.xpath("(//input[@type='checkbox'])[1]");
-    private By DataPrivacy = By.xpath("(//input[@type='checkbox'])[2]");
+    private By dataPrivacy = By.xpath("(//input[@type='checkbox'])[2]");
 	private By accountId= By.xpath("//input[@id='accountId']");
-	private By verificodetext= By.xpath("//input[@id='verificationCode']");
-	private By verifybutton = By.xpath("//button[contains(@onclick,'verify')]");
-	private By selectdropdown = By.xpath("(//span[contains(@class,'k-dropdown-wrap')])[1]");
+	private By verificationCodeText= By.xpath("//input[@id='verificationCode']");
+	private By verifyButton = By.xpath("//button[contains(@onclick,'verify')]");
+	private By selectDropdown = By.xpath("(//span[contains(@class,'k-dropdown-wrap')])[1]");
 	public String accountID;
 	
 	public AvailabilityPage(WebDriver driver) 
@@ -43,16 +43,16 @@ public class AvailabilityPage extends BasePage {
 		
 	}
 	
-	public void selectphonetype(String phonetype) 
+	public void selectphonetype(String phoneType) 
 	{		
-		driver.findElement(selectdropdown).click();
-		List<WebElement> list = driver.findElements(phonetypelist);
+		driver.findElement(selectDropdown).click();
+		List<WebElement> list = driver.findElements(phoneTypeList);
 		for(int i=0;i<list.size();i++) {
 			
 			String values = list.get(i).getText();
 			//System.out.println(values);
 			elementActions.moveTOelement(list.get(0));
-			if(values.equalsIgnoreCase(phonetype))
+			if(values.equalsIgnoreCase(phoneType))
 			{
 				 list.get(i).getText();
 				list.get(i).click();
@@ -62,24 +62,24 @@ public class AvailabilityPage extends BasePage {
 		}		
 	}
 	
-	public boolean fieldvisible() 
+	public boolean primaryEmailFieldVisible() 
 	{		
-	   return	driver.findElement(primaryemail).isDisplayed();		
+	   return	driver.findElement(primaryEmail).isDisplayed();		
 	}
 	
-	public void CreateMemeberAccount(String phonetype, String accountpassword)
+	public void CreateMemeberAccount(String phonetype, String accountpassword,String URI)
 	{
 		elementActions.longwaitforElement();
-		String valueprimary = driver.findElement(primaryemail).getAttribute("value");
+		String valueprimary = driver.findElement(primaryEmail).getAttribute("value");
 		System.out.println(valueprimary);
-		driver.findElement(retypeemail).sendKeys(valueprimary);	
-		driver.findElement(phonenoelement).click();
-		driver.findElement(phonenoelement).sendKeys("9773950224");
+		driver.findElement(retypeEmail).sendKeys(valueprimary);	
+		driver.findElement(phonenoElement).click();
+		driver.findElement(phonenoElement).sendKeys("9773950224");
 		selectphonetype(phonetype);
-		WebElement accpass = driver.findElement(accountpassele);
+		WebElement accpass = driver.findElement(accountPassele);
 		accpass.sendKeys(accountpassword);
 		String retypepassString = accpass.getAttribute("value");
-		driver.findElement(retypeaccpassele).sendKeys(retypepassString);	
+		driver.findElement(retypeAccPasswordElement).sendKeys(retypepassString);	
 		javascripts.scrollPageDown();
 		elementActions.shortwaitforElement();
 		WebElement termsnconditions = driver.findElement(TnC);
@@ -87,30 +87,28 @@ public class AvailabilityPage extends BasePage {
 		elementActions.shortwaitforElement();
 		elementActions.moveTOelement(termsnconditions);
 		elementActions.doActionsClick(TnC);
-	    WebElement dataprivacyele=	driver.findElement(DataPrivacy);
+	    WebElement dataprivacyele=	driver.findElement(dataPrivacy);
 	    javascripts.scrollIntoView(dataprivacyele);
 	    elementActions.shortwaitforElement();
 	    elementActions.moveTOelement(dataprivacyele);
-	    elementActions.doActionsClick(DataPrivacy);
-		driver.findElement(submitbuton).click();
+	    elementActions.doActionsClick(dataPrivacy);
+		driver.findElement(submitButton).click();
 		elementActions.shortwaitforElement();
 		 accountID = driver.findElement(accountId).getAttribute("value");
 				System.out.println(accountID);
-				String code = getVerificationCode();
+				String code = getVerificationCode(URI);
 		elementActions.shortwaitforElement(); 
-		driver.findElement(verificodetext).sendKeys(code);		 
-			driver.findElement(verifybutton).click();	 
+		driver.findElement(verificationCodeText).sendKeys(code);		 
+			driver.findElement(verifyButton).click();	 
 	}
 	
-	public String getVerificationCode() 
-	{
-		
-       RestAssured.baseURI = "http://personserver.coachspan.internal:9002/sec/code/account/";     
+	public String getVerificationCode(String URI) 
+	{		
+       RestAssured.baseURI = URI;     
        RequestSpecification httprequest = RestAssured.given();    
        Response response = httprequest.request(Method.GET, "/"+accountID);
 	   String Verificationcode = response.getBody().asString();
-	   System.out.println("responsebody: "+Verificationcode );
-       
+	   System.out.println("responsebody: "+Verificationcode );      
 		return Verificationcode;
 	}
 	

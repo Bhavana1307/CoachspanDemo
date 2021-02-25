@@ -13,28 +13,28 @@ public class CSBDTest extends BaseTest {
 	@BeforeClass
 	public void HomePage_setUp() 
 	{
-		homepage =loginpage.DoLogin(prop.getProperty("username"), prop.getProperty("password"));
-		csbdpage=homepage.selectContextvalues(driver, prop.getProperty("orgname"), homepage.orgContext, homepage.listoforgs);	
+		homePage =loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		csbdPage=homePage.selectContextvalues(driver, prop.getProperty("orgname"), homePage.orgContext, homePage.listOfOrgs);	
 	}
 	
 	@Test(enabled=false)
-	public void verifyaddedmember()
+	public void verifyAddedMember()
 	{
-		Assert.assertTrue(csbdpage.associateacoach(prop.getProperty("firstname"),prop.getProperty("lastname"),prop.getProperty("status")));
+		Assert.assertTrue(csbdPage.associateACoach(prop.getProperty("firstname"),prop.getProperty("lastname"),prop.getProperty("status")));
 		
 	}
 	
 	@Test(enabled=false)
 	public void VerifyCEElink() {
-		Assert.assertTrue(csbdpage.associateacoach(prop.getProperty("firstname"),prop.getProperty("lastname"),prop.getProperty("status")));
-		Object link = csbdpage.getCEEUrl();
+		Assert.assertTrue(csbdPage.associateACoach(prop.getProperty("firstname"),prop.getProperty("lastname"),prop.getProperty("status")));
+		Object link = csbdPage.getCEEUrl();
 		System.out.println(link);
 	}
 	
 	@Test(description="Verify Program CEE link is copied successfully")
 	public void verifyCEELPageLinkPageCopied() 
 	{
-        csbdpage.landonCEE();		
+        csbdPage.openCEEPage();		
 	}
 	
 	

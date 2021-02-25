@@ -9,10 +9,10 @@ public class LoginPage extends BasePage
 {
  
 	private WebDriver driver;
-	private By emailId = By.id("username");
-	private By password = By.id("password");
-	private By submitbutton = By.xpath("//button[@type='submit']");
-	private By forgotpassword = By.linkText("Forgot Password?");
+	private By emailIdElement = By.id("username");
+	private By passwordElement = By.id("password");
+	private By submitButton = By.xpath("//button[@type='submit']");
+	private By forgotPassword = By.linkText("Forgot Password?");
 	
 	
 	public LoginPage(WebDriver driver) 
@@ -25,17 +25,17 @@ public class LoginPage extends BasePage
 		return driver.getTitle();	
 	}
 	
-	public boolean isForgotPasswordlinkexist()
+	public boolean isForgotPasswordLinkExist()
 	{	
-		return driver.findElement(forgotpassword).isDisplayed();
+		return driver.findElement(forgotPassword).isDisplayed();
 	}
 	
-	public HomePage DoLogin(String username, String stringpassword)
+	public HomePage doLogin(String username, String stringpassword)
 	{
 		System.out.println("Login with " + username + " and " + stringpassword);
-		driver.findElement(emailId).sendKeys(username);
-		driver.findElement(password).sendKeys(stringpassword);
-		driver.findElement(submitbutton).click();
+		driver.findElement(emailIdElement).sendKeys(username);
+		driver.findElement(passwordElement).sendKeys(stringpassword);
+		driver.findElement(submitButton).click();
 		return new HomePage(driver);
 	}
 	

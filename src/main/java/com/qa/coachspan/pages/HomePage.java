@@ -13,16 +13,16 @@ public class HomePage extends BasePage{
 
 	private WebDriver driver;
 	ElementActions elementActions;
-	private By coachtab = By.xpath("//div[@id='tabstrip']/ul/li[3]");
-	private By tabs = By.xpath("//div[@id='tabstrip']/ul/li"); 
-	private By orglink = By.xpath("//a[@href='https://coachspan.com/terms-and-conditions-for-youth-organizations/']");
-	private By homeheading = By.xpath("//h1[text()='Organization List']");
+	private By coachTab = By.xpath("//div[@id='tabstrip']/ul/li[3]");
+	private By Tabs = By.xpath("//div[@id='tabstrip']/ul/li"); 
+	private By orgLink = By.xpath("//a[@href='https://coachspan.com/terms-and-conditions-for-youth-organizations/']");
+	private By homeHeading = By.xpath("//h1[text()='Organization List']");
 	public By orgContext = By.xpath("(//span[@class='k-input'])[1]");
 	public By programContext = By.xpath("(//span[@class='k-input'])[2]");
 	public By seasonContext = By.xpath("(//span[@class='k-input'])[3]");
-	public By listoforgs = By.xpath("//ul[@id='context-menu-org_listbox']/li");
-	public By listofprograms = By.xpath("//ul[@id='context-menu-program_listbox']/li");
-	public By listofseasons = By.xpath("//ul[@id='context-menu-season_listbox']/li");
+	public By listOfOrgs = By.xpath("//ul[@id='context-menu-org_listbox']/li");
+	public By listOfPprograms = By.xpath("//ul[@id='context-menu-program_listbox']/li");
+	public By listOfSeasons = By.xpath("//ul[@id='context-menu-season_listbox']/li");
 	
 	public HomePage(WebDriver driver)
 	{
@@ -30,20 +30,20 @@ public class HomePage extends BasePage{
 		elementActions = new ElementActions(driver);
 	}
 	
-	public boolean verifyorglink() 
+	public boolean verifyOrgLink() 
 	{
-		return driver.findElement(orglink).isDisplayed();	
+		return driver.findElement(orgLink).isDisplayed();	
 	}
 	
-	public String verifyTitle()
+	public String verifyHomePageTitle()
 	{
-		return driver.findElement((homeheading)).getText();	
+		return driver.findElement((homeHeading)).getText();	
 	}
 	
-	public CoachesPage clickoncoaches()
+	public CoachesPage clickOnCoachesTab()
 	{
 		elementActions.shortwaitforElement();
-		driver.findElement(coachtab).click();
+		driver.findElement(coachTab).click();
 		return new CoachesPage(driver);
 	}
 	

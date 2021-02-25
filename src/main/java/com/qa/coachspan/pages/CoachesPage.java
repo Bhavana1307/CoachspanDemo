@@ -1,10 +1,9 @@
 package com.qa.coachspan.pages;
 
-import java.util.List;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import com.qa.coachspan.base.BasePage;
 import com.qa.coachspan.util.ElementActions;
@@ -14,9 +13,9 @@ public class CoachesPage extends BasePage {
 
 	private WebDriver driver;
 	ElementActions elementActions;
-	private By pageheading = By.xpath("//h1[contains(text(),'Coach List for Season')]");
-	private By rowscount = By.xpath("//table[@role='treegrid']/tbody/tr");
-	private By reccount = By.id("recordscount");
+	private By pageHeading = By.xpath("//h1[contains(text(),'Coach List for Season')]");
+	private By rowsCount = By.xpath("//table[@role='treegrid']/tbody/tr");
+	private By recordsCount = By.id("recordscount");
 	
 	public CoachesPage(WebDriver driver) 
 	{	
@@ -25,21 +24,21 @@ public class CoachesPage extends BasePage {
 	}
 	
 	
-	public boolean isheadingvisible() 
+	public boolean isHeadingVisible() 
 	{
 		elementActions.shortwaitforElement();
-		 return driver.findElement(pageheading).isDisplayed();
+		 return driver.findElement(pageHeading).isDisplayed();
 		
 	}
 	
-	public int numberofcoaches()
+	public int getNumberofCoaches()
 	{
-		return driver.findElements(rowscount).size();	  
+		return driver.findElements(rowsCount).size();	  
 	}
 	
-	public int reccountgrid() 
+	public int getRecordCountOnGrid() 
 	{	
-		String reccountstring = driver.findElement(reccount).getText();
+		String reccountstring = driver.findElement(recordsCount).getText();
 		String[] reccounts = reccountstring.split(" ");
 		int reccount = Integer.parseInt(reccounts[0]);
 		System.out.println(reccount);

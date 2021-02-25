@@ -23,25 +23,25 @@ public class CSBDPage extends BasePage {
 	ElementActions elementActions;
 	private String emailID;
 	private By CL4D = By.xpath("//a[@href='/coachSummary/division']");	
-	private By associatebutton= By.xpath("//div[@class='container']//button[contains(@class,'btn')]");
-	private By addnewcoachwindow= By.xpath("//div[@id='addNewCoachWindow']");
-	private By selectcoach = By.xpath("//span[text()='Select a coach...']");
-	private By addmembertoDB = By.xpath("//button[contains(@class,'px-1 py-0 p-medium')]");
-	private By addmemberpopup = By.xpath("//div[@id='memberDetail']");
-	private By firstname = By.xpath("//input[@id='firstName']");
-	private By lastname = By.xpath("//input[@id='lastName']");
-	private By emailid = By.xpath("//input[@id='primaryEmail']");
-	private By savebutton = By.xpath("//button[@id='saveMemberChanges']");
-	private By coachstatus = By.xpath("//span[@title='Coach Status']");
-	private By coachstatuslist = By.xpath("//ul[@id='coachStatusDDAdd_listbox']/li");
-	private By associatecoachbutton = By.xpath("(//div[@id='addNewCoachWindow']//button[contains(@class,'btn-primary')])[2]");
-	private By admintab=By.xpath("//a[text()='Admin']");
-	private By programsettingstab = By.xpath("//a[text()='Program Settings']");
-	private By ceetab = By.xpath("//li[@id='cee-li']");
-	private By copylinktab = By.xpath("(//div[@class='input-group']/button)[1]");
-	private By menulink = By.xpath("//a[@id='navbarDropdownMenuLink']");
-	private By changepassword = By.xpath("//span[@class='dropdown-item'][1]");
-	private By logout = By.xpath("//span[@class='dropdown-item'][2]");
+	private By associateButton= By.xpath("//div[@class='container']//button[contains(@class,'btn')]");
+	private By addNewCoachWindow= By.xpath("//div[@id='addNewCoachWindow']");
+	private By selectCoach = By.xpath("//span[text()='Select a coach...']");
+	private By addMemberToDB = By.xpath("//button[contains(@class,'px-1 py-0 p-medium')]");
+	private By addMemberPopup = By.xpath("//div[@id='memberDetail']");
+	private By firstName = By.xpath("//input[@id='firstName']");
+	private By lastName = By.xpath("//input[@id='lastName']");
+	private By emailId = By.xpath("//input[@id='primaryEmail']");
+	private By saveButton = By.xpath("//button[@id='saveMemberChanges']");
+	private By coachStatus = By.xpath("//span[@title='Coach Status']");
+	private By coachStatusList = By.xpath("//ul[@id='coachStatusDDAdd_listbox']/li");
+	private By associateCoachButton = By.xpath("(//div[@id='addNewCoachWindow']//button[contains(@class,'btn-primary')])[2]");
+	private By adminTab=By.xpath("//a[text()='Admin']");
+	private By programSettingsTab = By.xpath("//a[text()='Program Settings']");
+	private By ceeTab = By.xpath("//li[@id='cee-li']");
+	private By copyLinkTab = By.xpath("(//div[@class='input-group']/button)[1]");
+	private By menuLink = By.xpath("//a[@id='navbarDropdownMenuLink']");
+	private By changePassword = By.xpath("//span[@class='dropdown-item'][1]");
+	private By logOut = By.xpath("//span[@class='dropdown-item'][2]");
 	
 	public CSBDPage(WebDriver driver)
 	{
@@ -49,22 +49,22 @@ public class CSBDPage extends BasePage {
 		elementActions = new ElementActions(driver);
 	}
 			
-	public String GenerateMemberData(String Firstname, String Lastname) {
+	public String generateMemberData(String Firstname, String Lastname) {
 		Random randomGenerator = new Random();  
 		int randomInt = randomGenerator.nextInt(1000);
-		WebElement firstnameW = driver.findElement(firstname);
+		WebElement firstnameW = driver.findElement(firstName);
 		firstnameW.sendKeys(Firstname);
-		WebElement lastnameW = driver.findElement(lastname);
+		WebElement lastnameW = driver.findElement(lastName);
 		String lastnameS = Lastname+randomInt;
 		lastnameW.sendKeys(lastnameS);
 		String emailid = Firstname+ lastnameS +"@test.com";
 		return emailid;
 	}
 	
-	public void getcoachstatus(String status) 
+	public void getCoachStatus(String status) 
 	{
-		driver.findElement(coachstatus).click();
-		 List<WebElement> list = driver.findElements(coachstatuslist);
+		driver.findElement(coachStatus).click();
+		 List<WebElement> list = driver.findElements(coachStatusList);
 		 for(int i=0;i<list.size();i++) 
 		 {
 			 if(list.get(i).getText().contains(status))
@@ -75,21 +75,21 @@ public class CSBDPage extends BasePage {
 		 }
 	}
 	
-	public boolean associateacoach(String Firstname, String Lastname,String status)
+	public boolean associateACoach(String Firstname, String Lastname,String status)
 	{
 		driver.findElement(CL4D).click();
-		driver.findElement(associatebutton).click();
+		driver.findElement(associateButton).click();
 		elementActions.longwaitforElement();
-		driver.findElement(addnewcoachwindow).click();
+		driver.findElement(addNewCoachWindow).click();
 		elementActions.shortwaitforElement();
-        driver.findElement(addmembertoDB).click();
+        driver.findElement(addMemberToDB).click();
         elementActions.shortwaitforElement();
-        String emailString = GenerateMemberData(Firstname, Lastname);
-		driver.findElement(emailid).sendKeys(emailString);
-		driver.findElement(savebutton).click();
+        String emailString = generateMemberData(Firstname, Lastname);
+		driver.findElement(emailId).sendKeys(emailString);
+		driver.findElement(saveButton).click();
 		 elementActions.shortwaitforElement();
-		 getcoachstatus(status);
-		 driver.findElement(associatecoachbutton).click();
+		 getCoachStatus(status);
+		 driver.findElement(associateCoachButton).click();
 		 elementActions.shortwaitforElement();
 	   return	driver.findElement(By.xpath("//table[@role='treegrid']/tbody/tr/td/a[text()="
 					+ "'"+emailString+ "']")).isDisplayed(); 
@@ -100,18 +100,18 @@ public class CSBDPage extends BasePage {
 	{
 
 		driver.findElement(CL4D).click();
-		driver.findElement(associatebutton).click();
+		driver.findElement(associateButton).click();
 		elementActions.longwaitforElement();
-		driver.findElement(addnewcoachwindow).click();
+		driver.findElement(addNewCoachWindow).click();
 		elementActions.shortwaitforElement();
-        driver.findElement(addmembertoDB).click();
+        driver.findElement(addMemberToDB).click();
         elementActions.shortwaitforElement();
-        String emailString = GenerateMemberData(Firstname, Lastname);
-		driver.findElement(emailid).sendKeys(emailString);
-		driver.findElement(savebutton).click();
+        String emailString = generateMemberData(Firstname, Lastname);
+		driver.findElement(emailId).sendKeys(emailString);
+		driver.findElement(saveButton).click();
 		 elementActions.shortwaitforElement();
-		 getcoachstatus(status);
-		 driver.findElement(associatecoachbutton).click();
+		 getCoachStatus(status);
+		 driver.findElement(associateCoachButton).click();
 		 elementActions.shortwaitforElement();
 		 return emailString;
 	}
@@ -119,13 +119,13 @@ public class CSBDPage extends BasePage {
 	public String getCEEUrl()
 	{
 		elementActions.shortwaitforElement();
-		driver.findElement(admintab).click();
-		driver.findElement(programsettingstab).click();
-		driver.findElement(ceetab).click();
+		driver.findElement(adminTab).click();
+		driver.findElement(programSettingsTab).click();
+		driver.findElement(ceeTab).click();
 		//WebElement copylinkbutton = driver.findElement(copylinktab);
 	
 		try {
-			WebElement copylinkbutton = driver.findElement(copylinktab);
+			WebElement copylinkbutton = driver.findElement(copyLinkTab);
 			copylinkbutton.click();
 			Clipboard clipb = Toolkit.getDefaultToolkit().getSystemClipboard();
 			Object data = clipb.getData(DataFlavor.stringFlavor);
@@ -143,25 +143,25 @@ public class CSBDPage extends BasePage {
      return null;
 	}
 	
-	public void menuoption(String function) 
+	public void menuOption(String function) 
 	{
-		driver.findElement(menulink).click();
+		driver.findElement(menuLink).click();
 		if(function.equalsIgnoreCase("change password"))
 		{
-			driver.findElement(changepassword).click();
+			driver.findElement(changePassword).click();
 		}		
 		else if(function.equalsIgnoreCase("logout")) {
-			driver.findElement(logout).click();
+			driver.findElement(logOut).click();
 		}
 		else {
 			System.out.println("invalid!!");
 		}	
 	}
 	
-	public CEEPage landonCEE()
+	public CEEPage openCEEPage()
 	{	
 		String URL=getCEEUrl();
-		menuoption("logout");
+		menuOption("logout");
 		elementActions.shortwaitforElement();
 		driver.get(URL);
 		return new CEEPage(driver);	

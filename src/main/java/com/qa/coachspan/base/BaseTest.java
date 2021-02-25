@@ -18,25 +18,25 @@ import com.qa.coachspan.pages.LoginPage;
 
 public class BaseTest {
 
-	public BasePage basepage;
+	public BasePage basePage;
 	public Properties prop;
-	public LoginPage loginpage;
-	public HomePage homepage;
-	public CoachesPage coachpage;
-	public CSBDPage csbdpage;
-	public CEEPage ceepage;
-	public AvailabilityPage availabilitypage;
+	public LoginPage loginPage;
+	public HomePage homePage;
+	public CoachesPage coachPage;
+	public CSBDPage csbdPage;
+	public CEEPage ceePage;
+	public AvailabilityPage availabilityPage;
 	public WebDriver driver;
 	
 	
 	@BeforeTest
 	public void setUp()
 	{
-		basepage = new BasePage();
-		prop = basepage.init_prop();
+		basePage = new BasePage();
+		prop = basePage.init_Prop();
 		String browser = prop.getProperty("browser");
-		driver = basepage.init_browser(browser);
-		loginpage= new LoginPage(driver);
+		driver = basePage.init_Browser(browser);
+		loginPage= new LoginPage(driver);
 		driver.get(prop.getProperty("url"));
 		
 	}

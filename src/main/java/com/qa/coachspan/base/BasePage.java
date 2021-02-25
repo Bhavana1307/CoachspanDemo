@@ -30,7 +30,7 @@ public class BasePage {
 		return tlDriver.get();
 	}
 	
-	public WebDriver init_browser(String browser) 
+	public WebDriver init_Browser(String browser) 
 	{
 		
 		System.out.println("broser value is : "+browser);
@@ -64,7 +64,7 @@ public class BasePage {
 	 * This method is used to load properties from config file
 	 * return properties
 	 */
-   public Properties init_prop() 
+   public Properties init_Prop() 
    {
 	  prop = new Properties();
 	  try {

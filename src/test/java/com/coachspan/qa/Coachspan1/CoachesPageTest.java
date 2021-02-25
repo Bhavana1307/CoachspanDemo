@@ -17,26 +17,26 @@ public class CoachesPageTest extends BaseTest
 	@BeforeClass
 	public void HomePage_setUp() 
 	{
-		homepage =loginpage.DoLogin(prop.getProperty("username"), prop.getProperty("password"));
-		csbdpage=homepage.selectContextvalues(driver, prop.getProperty("orgname"), homepage.orgContext, homepage.listoforgs);	
+		homePage =loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		csbdPage=homePage.selectContextvalues(driver, prop.getProperty("orgname"), homePage.orgContext, homePage.listOfOrgs);	
 	}
 	
 	@Test(priority=1)
 	public void verifyCL4SPageShown() 
 	{		
-	  coachpage=homepage.clickoncoaches();
+	  coachPage=homePage.clickOnCoachesTab();
 	}
 	
 	@Test(priority=2)
 	public void verifyCL4SPageHeadingTest() 
 	{		
-		Assert.assertTrue(coachpage.isheadingvisible());	
+		Assert.assertTrue(coachPage.isHeadingVisible());	
 	}
 	
 	@Test(priority=3)
-	public void verifyTotalnumbercoachsonCL4S() 
+	public void verifyTotalNumberCoachsOnCL4S() 
 	{
-		Assert.assertEquals(coachpage.numberofcoaches(), coachpage.reccountgrid());
+		Assert.assertEquals(coachPage.getNumberofCoaches(), coachPage.getRecordCountOnGrid());
 		
 	}
 	

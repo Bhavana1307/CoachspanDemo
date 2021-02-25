@@ -13,28 +13,28 @@ public class HomePageTest extends BaseTest
 	@BeforeClass
 	public void HomePage_setUp() 
 	{
-		homepage = loginpage.DoLogin(prop.getProperty("username"), prop.getProperty("password"));
+		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	@Test(description="Verify after login Org link is shown to AYS admin")
 	public void verfiyHomeOrgLinkTest() 
 	
 	{
-		Assert.assertTrue(homepage.verifyorglink());	
+		Assert.assertTrue(homePage.verifyOrgLink());	
 	}
 	
 	@Test
-	public void verifyHomePageheadingTest() 
+	public void verifyHomePageHeadingTest() 
 	{		
-		String heading = homepage.verifyTitle();
+		String heading = homePage.verifyHomePageTitle();
 		Assert.assertEquals(heading, "Organization List");
 	}
 	
 	@Test(description="Verify if given org is successfully selected")
 	public void verifyContextBarSelection() 
 	{	
-		homepage.selectContextvalues
-		(driver, prop.getProperty("orgname"), homepage.orgContext, homepage.listoforgs);
+		homePage.selectContextvalues
+		(driver, prop.getProperty("orgname"), homePage.orgContext, homePage.listOfOrgs);
 	}
 
 }

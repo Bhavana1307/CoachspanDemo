@@ -12,7 +12,7 @@ public class LoginPageTest  extends BaseTest
 	@Test(priority=1,description="Verify title of coachspan")
 	public void verifyLoginPageTitle() 
 	{
-		String title = loginpage.getLoginPageTitle();
+		String title = loginPage.getLoginPageTitle();
 		System.out.println("title is " + title);
 		Assert.assertEquals(title, "CoachSpan");
 	}
@@ -20,13 +20,13 @@ public class LoginPageTest  extends BaseTest
 	@Test(priority=2,description="Verify forgot link is shown successfully")
 	public void verifyForgotPasswordLink() 
 	{
-		Assert.assertTrue(loginpage.isForgotPasswordlinkexist());
+		Assert.assertTrue(loginPage.isForgotPasswordLinkExist());
 	}
 	
 	@Test(priority=3, description="Verify if user is logged in successfully")
 	public void verifyLoginFunctionality() 
 	{
-		loginpage.DoLogin(prop.getProperty("username"), prop.getProperty("password"));
+		loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		
 	}
 	

@@ -12,8 +12,8 @@ public class CEEPageTest extends BaseTest{
 	@BeforeClass
 	public void HomePage_setUp() 
 	{
-		homepage =loginpage.DoLogin(prop.getProperty("username"), prop.getProperty("password"));
-		csbdpage=homepage.selectContextvalues(driver, prop.getProperty("orgname"), homepage.orgContext, homepage.listoforgs);
+		homePage =loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		csbdPage=homePage.selectContextvalues(driver, prop.getProperty("orgname"), homePage.orgContext, homePage.listOfOrgs);
 	   	
 	}
 	
@@ -21,9 +21,9 @@ public class CEEPageTest extends BaseTest{
 	public void verifyCEEPageShown() 
 	{
 		 String emailstring =
-	      csbdpage.associatedEmailID(prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("status"));
-		  ceepage = csbdpage.landonCEE();
-		  ceepage.launchAvailabilitypage(emailstring);
+	      csbdPage.associatedEmailID(prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("status"));
+		  ceePage = csbdPage.openCEEPage();
+		  ceePage.launchAvailabilityPage(emailstring);
 		
 	}
 	
