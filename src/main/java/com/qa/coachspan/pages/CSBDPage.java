@@ -70,12 +70,11 @@ public class CSBDPage extends BasePage {
 			 if(list.get(i).getText().contains(status))
 			 {
 				 list.get(i).click();
-			 }
-		
+			 }		
 		 }
 	}
 	
-	public boolean associateACoach(String Firstname, String Lastname,String status)
+	public boolean IsassociateACoachVisible(String Firstname, String Lastname,String status)
 	{
 		driver.findElement(CL4D).click();
 		driver.findElement(associateButton).click();
@@ -96,7 +95,7 @@ public class CSBDPage extends BasePage {
 		 
 	}
 
-	public String associatedEmailID(String Firstname, String Lastname,String status) 
+	public String getAssociatedEmailID(String Firstname, String Lastname,String status) 
 	{
 
 		driver.findElement(CL4D).click();
@@ -143,7 +142,7 @@ public class CSBDPage extends BasePage {
      return null;
 	}
 	
-	public void menuOption(String function) 
+	public void getMenuOption(String function) 
 	{
 		driver.findElement(menuLink).click();
 		if(function.equalsIgnoreCase("change password"))
@@ -161,7 +160,7 @@ public class CSBDPage extends BasePage {
 	public CEEPage openCEEPage()
 	{	
 		String URL=getCEEUrl();
-		menuOption("logout");
+		getMenuOption("logout");
 		elementActions.shortwaitforElement();
 		driver.get(URL);
 		return new CEEPage(driver);	

@@ -16,7 +16,7 @@ public class AvailabilityPageTest extends BaseTest
 		homePage =loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		csbdPage=homePage.selectContextvalues(driver, prop.getProperty("orgname"), homePage.orgContext, homePage.listOfOrgs);
 		 String emailstring =
-			      csbdPage.associatedEmailID(prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("status"));
+			      csbdPage.getAssociatedEmailID(prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("status"));
 	        ceePage = csbdPage.openCEEPage();
 	       availabilityPage=  ceePage.launchAvailabilityPage(emailstring);
 	}
@@ -25,7 +25,7 @@ public class AvailabilityPageTest extends BaseTest
 	@Test(description="Verify if PrimaryEmail field is visible")
 	public void verifyVisibilityofPrimaryEmailField()
 	{
-	boolean visible = availabilityPage.primaryEmailFieldVisible();
+	boolean visible = availabilityPage.isPrimaryEmailFieldVisible();
 		System.out.println(visible);
 	}
 	

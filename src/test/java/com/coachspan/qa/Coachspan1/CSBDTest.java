@@ -20,13 +20,13 @@ public class CSBDTest extends BaseTest {
 	@Test(enabled=false)
 	public void verifyAddedMember()
 	{
-		Assert.assertTrue(csbdPage.associateACoach(prop.getProperty("firstname"),prop.getProperty("lastname"),prop.getProperty("status")));
+		Assert.assertTrue(csbdPage.IsassociateACoachVisible(prop.getProperty("firstname"),prop.getProperty("lastname"),prop.getProperty("status")));
 		
 	}
 	
 	@Test(enabled=false)
 	public void VerifyCEElink() {
-		Assert.assertTrue(csbdPage.associateACoach(prop.getProperty("firstname"),prop.getProperty("lastname"),prop.getProperty("status")));
+		Assert.assertTrue(csbdPage.IsassociateACoachVisible(prop.getProperty("firstname"),prop.getProperty("lastname"),prop.getProperty("status")));
 		Object link = csbdPage.getCEEUrl();
 		System.out.println(link);
 	}

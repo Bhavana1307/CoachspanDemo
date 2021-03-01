@@ -21,7 +21,7 @@ public class CEEPageTest extends BaseTest{
 	public void verifyCEEPageShown() 
 	{
 		 String emailstring =
-	      csbdPage.associatedEmailID(prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("status"));
+	      csbdPage.getAssociatedEmailID(prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("status"));
 		  ceePage = csbdPage.openCEEPage();
 		  ceePage.launchAvailabilityPage(emailstring);
 		

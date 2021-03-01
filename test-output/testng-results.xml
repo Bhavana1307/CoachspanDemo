@@ -1,33 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="2" total="14" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="160261" started-at="2021-02-24T18:19:22 IST" finished-at="2021-02-24T18:22:03 IST">
+  <suite name="Coachspan Regression Test Suite" duration-ms="217803" started-at="2021-02-28T19:50:13 IST" finished-at="2021-02-28T19:53:50 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="160261" started-at="2021-02-24T18:19:22 IST" finished-at="2021-02-24T18:22:03 IST">
-      <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@59fc684e]" name="setUp" is-config="true" duration-ms="7331" started-at="2021-02-24T18:19:22 IST" finished-at="2021-02-24T18:19:30 IST">
+    <test name="Login Test" duration-ms="13307" started-at="2021-02-28T19:50:13 IST" finished-at="2021-02-28T19:50:26 IST">
+      <class name="com.coachspan.qa.Coachspan1.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.LoginPageTest@5eccd3b9]" name="setUp" is-config="true" duration-ms="6967" started-at="2021-02-28T19:50:13 IST" finished-at="2021-02-28T19:50:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@59fc684e]" name="HomePage_setUp" is-config="true" duration-ms="111600" started-at="2021-02-24T18:19:30 IST" finished-at="2021-02-24T18:21:21 IST">
+        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:1, instance:com.coachspan.qa.Coachspan1.LoginPageTest@5eccd3b9]" name="verifyLoginPageTitle" duration-ms="100" started-at="2021-02-28T19:50:20 IST" description="Verify title of coachspan" finished-at="2021-02-28T19:50:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method status="PASS" signature="verifyForgotPasswordLink()[pri:2, instance:com.coachspan.qa.Coachspan1.LoginPageTest@5eccd3b9]" name="verifyForgotPasswordLink" duration-ms="77" started-at="2021-02-28T19:50:20 IST" description="Verify forgot link is shown successfully" finished-at="2021-02-28T19:50:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordLink -->
+        <test-method status="PASS" signature="verifyLoginFunctionality()[pri:3, instance:com.coachspan.qa.Coachspan1.LoginPageTest@5eccd3b9]" name="verifyLoginFunctionality" duration-ms="4976" started-at="2021-02-28T19:50:20 IST" description="Verify if user is logged in successfully" finished-at="2021-02-28T19:50:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctionality -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.LoginPageTest@5eccd3b9]" name="teardown" is-config="true" duration-ms="903" started-at="2021-02-28T19:50:25 IST" finished-at="2021-02-28T19:50:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.coachspan.qa.Coachspan1.LoginPageTest -->
+    </test> <!-- Login Test -->
+    <test name="homepage test" duration-ms="56172" started-at="2021-02-28T19:50:13 IST" finished-at="2021-02-28T19:51:09 IST">
+      <class name="com.coachspan.qa.Coachspan1.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2e3a5237]" name="setUp" is-config="true" duration-ms="7932" started-at="2021-02-28T19:50:13 IST" finished-at="2021-02-28T19:50:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2e3a5237]" name="HomePage_setUp" is-config="true" duration-ms="4554" started-at="2021-02-28T19:50:21 IST" finished-at="2021-02-28T19:50:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePage_setUp -->
-        <test-method status="PASS" signature="VerifyCoachCreationFunctionality()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@59fc684e]" name="VerifyCoachCreationFunctionality" duration-ms="40256" started-at="2021-02-24T18:21:21 IST" description="Verify if Member is created successfully" finished-at="2021-02-24T18:22:02 IST">
+        <test-method status="PASS" signature="verfiyHomeOrgLinkTest()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2e3a5237]" name="verfiyHomeOrgLinkTest" duration-ms="80" started-at="2021-02-28T19:50:25 IST" description="Verify after login Org link is shown to AYS admin" finished-at="2021-02-28T19:50:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyHomeOrgLinkTest -->
+        <test-method status="PASS" signature="verifyContextBarSelection()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2e3a5237]" name="verifyContextBarSelection" duration-ms="42710" started-at="2021-02-28T19:50:25 IST" description="Verify if given org is successfully selected" finished-at="2021-02-28T19:51:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContextBarSelection -->
+        <test-method status="PASS" signature="verifyHomePageHeadingTest()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2e3a5237]" name="verifyHomePageHeadingTest" duration-ms="60" started-at="2021-02-28T19:51:08 IST" finished-at="2021-02-28T19:51:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageHeadingTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.HomePageTest@2e3a5237]" name="teardown" is-config="true" duration-ms="780" started-at="2021-02-28T19:51:08 IST" finished-at="2021-02-28T19:51:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.coachspan.qa.Coachspan1.HomePageTest -->
+    </test> <!-- homepage test -->
+    <test name="Coachespage test" duration-ms="55364" started-at="2021-02-28T19:50:27 IST" finished-at="2021-02-28T19:51:22 IST">
+      <class name="com.coachspan.qa.Coachspan1.CoachesPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@4905c46b]" name="setUp" is-config="true" duration-ms="5623" started-at="2021-02-28T19:50:27 IST" finished-at="2021-02-28T19:50:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@4905c46b]" name="HomePage_setUp" is-config="true" duration-ms="38045" started-at="2021-02-28T19:50:32 IST" finished-at="2021-02-28T19:51:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage_setUp -->
+        <test-method status="PASS" signature="verifyCL4SPageShown()[pri:1, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@4905c46b]" name="verifyCL4SPageShown" duration-ms="5809" started-at="2021-02-28T19:51:10 IST" finished-at="2021-02-28T19:51:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCL4SPageShown -->
+        <test-method status="PASS" signature="verifyCL4SPageHeadingTest()[pri:2, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@4905c46b]" name="verifyCL4SPageHeadingTest" duration-ms="5063" started-at="2021-02-28T19:51:16 IST" finished-at="2021-02-28T19:51:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCL4SPageHeadingTest -->
+        <test-method status="PASS" signature="verifyTotalNumberCoachsOnCL4S()[pri:3, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@4905c46b]" name="verifyTotalNumberCoachsOnCL4S" duration-ms="70" started-at="2021-02-28T19:51:21 IST" finished-at="2021-02-28T19:51:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalNumberCoachsOnCL4S -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.CoachesPageTest@4905c46b]" name="teardown" is-config="true" duration-ms="720" started-at="2021-02-28T19:51:21 IST" finished-at="2021-02-28T19:51:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.coachspan.qa.Coachspan1.CoachesPageTest -->
+    </test> <!-- Coachespage test -->
+    <test name="CSBD Page test" duration-ms="76249" started-at="2021-02-28T19:51:09 IST" finished-at="2021-02-28T19:52:25 IST">
+      <class name="com.coachspan.qa.Coachspan1.CSBDTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.CSBDTest@286b39c2]" name="setUp" is-config="true" duration-ms="5016" started-at="2021-02-28T19:51:09 IST" finished-at="2021-02-28T19:51:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.CSBDTest@286b39c2]" name="HomePage_setUp" is-config="true" duration-ms="48062" started-at="2021-02-28T19:51:14 IST" finished-at="2021-02-28T19:52:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage_setUp -->
+        <test-method status="PASS" signature="verifyCEELPageLinkPageCopied()[pri:0, instance:com.coachspan.qa.Coachspan1.CSBDTest@286b39c2]" name="verifyCEELPageLinkPageCopied" duration-ms="22279" started-at="2021-02-28T19:52:02 IST" description="Verify Program CEE link is copied successfully" finished-at="2021-02-28T19:52:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCEELPageLinkPageCopied -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.CSBDTest@286b39c2]" name="teardown" is-config="true" duration-ms="860" started-at="2021-02-28T19:52:24 IST" finished-at="2021-02-28T19:52:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.coachspan.qa.Coachspan1.CSBDTest -->
+    </test> <!-- CSBD Page test -->
+    <test name="Availability Page test" duration-ms="148288" started-at="2021-02-28T19:51:22 IST" finished-at="2021-02-28T19:53:50 IST">
+      <class name="com.coachspan.qa.Coachspan1.AvailabilityPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@2c779e5]" name="setUp" is-config="true" duration-ms="5236" started-at="2021-02-28T19:51:22 IST" finished-at="2021-02-28T19:51:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="HomePage_setUp()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@2c779e5]" name="HomePage_setUp" is-config="true" duration-ms="106762" started-at="2021-02-28T19:51:27 IST" finished-at="2021-02-28T19:53:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage_setUp -->
+        <test-method status="FAIL" signature="VerifyCoachCreationFunctionality()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@2c779e5]" name="VerifyCoachCreationFunctionality" duration-ms="34536" started-at="2021-02-28T19:53:14 IST" description="Verify if Member is created successfully" finished-at="2021-02-28T19:53:49 IST">
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[personserver.coachspan.internal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: personserver.coachspan.internal
+at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+at java.net.InetAddress.getAllByName0(Unknown Source)
+at java.net.InetAddress.getAllByName(Unknown Source)
+at java.net.InetAddress.getAllByName(Unknown Source)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2122)
+at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
+at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
+at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1525)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1288)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1725)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy:292)
+at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy:288)
+at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy)
+at com.qa.coachspan.pages.AvailabilityPage.getVerificationCode(AvailabilityPage.java:109)
+at com.qa.coachspan.pages.AvailabilityPage.CreateMemeberAccount(AvailabilityPage.java:99)
+at com.coachspan.qa.Coachspan1.AvailabilityPageTest.VerifyCoachCreationFunctionality(AvailabilityPageTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoachCreationFunctionality -->
-        <test-method status="PASS" signature="verifyVisibilityofPrimaryEmailField()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@59fc684e]" name="verifyVisibilityofPrimaryEmailField" duration-ms="49" started-at="2021-02-24T18:22:02 IST" description="Verify if PrimaryEmail field is visible" finished-at="2021-02-24T18:22:02 IST">
+        <test-method status="PASS" signature="verifyVisibilityofPrimaryEmailField()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@2c779e5]" name="verifyVisibilityofPrimaryEmailField" duration-ms="33" started-at="2021-02-28T19:53:50 IST" description="Verify if PrimaryEmail field is visible" finished-at="2021-02-28T19:53:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyVisibilityofPrimaryEmailField -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@59fc684e]" name="teardown" is-config="true" duration-ms="743" started-at="2021-02-24T18:22:02 IST" finished-at="2021-02-24T18:22:03 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.coachspan.qa.Coachspan1.AvailabilityPageTest@2c779e5]" name="teardown" is-config="true" duration-ms="775" started-at="2021-02-28T19:53:50 IST" finished-at="2021-02-28T19:53:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.coachspan.qa.Coachspan1.AvailabilityPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Availability Page test -->
+  </suite> <!-- Coachspan Regression Test Suite -->
 </testng-results>

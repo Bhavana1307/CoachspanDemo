@@ -43,7 +43,7 @@ public class AvailabilityPage extends BasePage {
 		
 	}
 	
-	public void selectphonetype(String phoneType) 
+	public void selectPhoneType(String phoneType) 
 	{		
 		driver.findElement(selectDropdown).click();
 		List<WebElement> list = driver.findElements(phoneTypeList);
@@ -62,7 +62,7 @@ public class AvailabilityPage extends BasePage {
 		}		
 	}
 	
-	public boolean primaryEmailFieldVisible() 
+	public boolean isPrimaryEmailFieldVisible() 
 	{		
 	   return	driver.findElement(primaryEmail).isDisplayed();		
 	}
@@ -75,7 +75,7 @@ public class AvailabilityPage extends BasePage {
 		driver.findElement(retypeEmail).sendKeys(valueprimary);	
 		driver.findElement(phonenoElement).click();
 		driver.findElement(phonenoElement).sendKeys("9773950224");
-		selectphonetype(phonetype);
+		selectPhoneType(phonetype);
 		WebElement accpass = driver.findElement(accountPassele);
 		accpass.sendKeys(accountpassword);
 		String retypepassString = accpass.getAttribute("value");
